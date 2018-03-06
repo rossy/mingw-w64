@@ -117,6 +117,8 @@ THEMEAPI_(HTHEME) OpenThemeData(HWND hwnd,LPCWSTR pszClassList);
 THEMEAPI_(HTHEME) OpenThemeDataEx(HWND hwnd,LPCWSTR pszClassList,DWORD dwFlags);
 #endif
 
+THEMEAPI_(HTHEME) OpenThemeDataForDpi(HWND hwnd,LPCWSTR pszClassList,UINT dpi);
+
 THEMEAPI CloseThemeData(HTHEME hTheme);
 THEMEAPI DrawThemeBackground(HTHEME hTheme,HDC hdc,int iPartId,int iStateId,const RECT *pRect,const RECT *pClipRect);
 
