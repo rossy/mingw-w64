@@ -82,6 +82,7 @@ IsThemeBackgroundPartiallyTransparent
 IsThemeDialogTextureEnabled
 IsThemePartDefined
 OpenThemeData
+OpenThemeDataForDpi
 SetThemeAppProperties
 SetWindowTheme
 SetWindowThemeAttribute
