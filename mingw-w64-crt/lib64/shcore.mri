@@ -1,0 +1,7 @@
+CREATE lib64/libshcore.a
+ADDLIB lib64/libapi-ms-win-shcore-stream-winrt-l1-1-0.a
+ADDLIB lib64/libapi-ms-win-shcore-scaling-l1-1-0.a
+ADDLIB lib64/libapi-ms-win-shcore-scaling-l1-1-1.a
+ADDLIB lib64/libapi-ms-win-shcore-scaling-l1-1-2.a
+SAVE
+END

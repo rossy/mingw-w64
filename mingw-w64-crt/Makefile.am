@@ -746,6 +746,12 @@ lib32/libruntimeobject.a: lib32/runtimeobject.mri lib32/libapi-ms-win-core-winrt
 	$(AR) -M < $<
 	$(RANLIB) $@
 
+lib32/libshcore.a: lib32/shcore.mri lib32/libapi-ms-win-shcore-stream-winrt-l1-1-0.a lib32/libapi-ms-win-shcore-scaling-l1-1-0.a \
+	lib32/libapi-ms-win-shcore-scaling-l1-1-1.a lib32/libapi-ms-win-shcore-scaling-l1-1-2.a
+	rm -f $@
+	$(AR) -M < $<
+	$(RANLIB) $@
+
 lib32/libsynchronization.a: lib32/synchronization.mri lib32/libapi-ms-win-core-synch-l1-2-0.a
 	rm -f $@
 	$(AR) -M < $<
@@ -1110,6 +1116,12 @@ lib64/libruntimeobject.a: lib64/runtimeobject.mri lib64/libapi-ms-win-core-winrt
 	$(AR) -M < $<
 	$(RANLIB) $@
 
+lib64/libshcore.a: lib64/shcore.mri lib64/libapi-ms-win-shcore-stream-winrt-l1-1-0.a lib64/libapi-ms-win-shcore-scaling-l1-1-0.a \
+	lib64/libapi-ms-win-shcore-scaling-l1-1-1.a lib64/libapi-ms-win-shcore-scaling-l1-1-2.a
+	rm -f $@
+	$(AR) -M < $<
+	$(RANLIB) $@
+
 lib64/libsynchronization.a: lib64/synchronization.mri lib64/libapi-ms-win-core-synch-l1-2-0.a
 	rm -f $@
 	$(AR) -M < $<
@@ -1418,6 +1430,12 @@ libarm32/libruntimeobject.a: libarm32/runtimeobject.mri libarm32/libapi-ms-win-c
 	$(AR) -M < $<
 	$(RANLIB) $@
 
+libarm32/libshcore.a: libarm32/shcore.mri libarm32/libapi-ms-win-shcore-stream-winrt-l1-1-0.a libarm32/libapi-ms-win-shcore-scaling-l1-1-0.a \
+	libarm32/libapi-ms-win-shcore-scaling-l1-1-1.a libarm32/libapi-ms-win-shcore-scaling-l1-1-2.a
+	rm -f $@
+	$(AR) -M < $<
+	$(RANLIB) $@
+
 libarm32/libsynchronization.a: libarm32/synchronization.mri libarm32/libapi-ms-win-core-synch-l1-2-0.a
 	rm -f $@
 	$(AR) -M < $<
@@ -1426,7 +1444,7 @@ libarm32/libsynchronization.a: libarm32/synchronization.mri libarm32/libapi-ms-w
 dx32_DATA =
 dx32_DATA += libarm32/libxinput.a
 dx32_DATA += libarm32/libd3dcompiler.a
-libarm32_DATA += libarm32/libruntimeobject.a libarm32/libsynchronization.a
+libarm32_DATA += libarm32/libruntimeobject.a libarm32/libshcore.a libarm32/libsynchronization.a
 
 libarm32/libxinput.a: lib-common/xinput1_4.def
 	$(DTDEFARM32) $<
@@ -1670,6 +1688,12 @@ libarm64/libvfw32.a: libarm64/vfw32.mri libarm64/libmsvfw32.a libarm64/libavifil
 	$(RANLIB) $@
 
 libarm64/libruntimeobject.a: libarm64/runtimeobject.mri libarm64/libapi-ms-win-core-winrt-string-l1-1-0.a libarm64/libapi-ms-win-core-winrt-l1-1-0.a
+	rm -f $@
+	$(AR) -M < $<
+	$(RANLIB) $@
+
+libarm64/libshcore.a: libarm64/shcore.mri libarm64/libapi-ms-win-shcore-stream-winrt-l1-1-0.a libarm64/libapi-ms-win-shcore-scaling-l1-1-0.a \
+	libarm64/libapi-ms-win-shcore-scaling-l1-1-1.a libarm64/libapi-ms-win-shcore-scaling-l1-1-2.a
 	rm -f $@
 	$(AR) -M < $<
 	$(RANLIB) $@
